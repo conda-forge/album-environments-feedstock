@@ -1,5 +1,5 @@
 {% set name = "album-environments" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1c75c96fab3cc97ee0628040b55d991fd787aea34b4ff9cf7f4cf58931fccda6
+  sha256: 337929d389af1601e1b15122c57aa18b67f8a6030b82d4e1b25d8b61637131dd
 
 build:
   number: 0
