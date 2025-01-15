@@ -28,6 +28,7 @@ requirements:
     - pre-commit >=2.20.0
     - conda-lock >=1.4.0
     - album-solution-api >=0.6.0
+    - pooch >=1.8.1
 
 test:
   imports:
