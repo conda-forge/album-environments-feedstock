@@ -1,5 +1,5 @@
 {% set name = "album-environments" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 33ebbe4913d706fcf15955f3a2e9b7395f172af5139a51c7af99fd2e9adfdf25
+  sha256: bf3c8b2220d097a6a043b524f7114edfa79bc8fed135cf8df4310330c3d48856
 
 build:
   number: 0
@@ -18,8 +18,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
-    - pip
     - python >={{ python_min }}
     - pyyaml >=5.4.1
     - validators >=0.18.2
@@ -27,7 +27,7 @@ requirements:
     - jsonschema >=4.0.0
     - pre-commit >=2.20.0
     - conda-lock >=1.4.0
-    - album-solution-api >=0.6.0
+    - album-solution-api >=0.7.0,<0.8.0
     - pooch >=1.8.1
 
 test:
@@ -53,4 +53,3 @@ extra:
   recipe-maintainers:
     - jpalbrecht
     - frauzufall
-    - jpalbrecht
