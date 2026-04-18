@@ -18,8 +18,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
-    - pip
     - python >={{ python_min }}
     - pyyaml >=5.4.1
     - validators >=0.18.2
@@ -27,7 +27,7 @@ requirements:
     - jsonschema >=4.0.0
     - pre-commit >=2.20.0
     - conda-lock >=1.4.0
-    - album-solution-api >=0.6.0
+    - album-solution-api >=0.7.0,<0.8.0
     - pooch >=1.8.1
 
 test:
@@ -53,4 +53,3 @@ extra:
   recipe-maintainers:
     - jpalbrecht
     - frauzufall
-    - jpalbrecht
