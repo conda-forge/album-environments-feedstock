@@ -1,5 +1,5 @@
 {% set name = "album-environments" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: bf3c8b2220d097a6a043b524f7114edfa79bc8fed135cf8df4310330c3d48856
+  sha256: b78c5703e7e0ec3f528ce29b1ec333e324d0ec7e2855fa83ef290e447924a893
 
 build:
   number: 0
@@ -25,9 +25,8 @@ requirements:
     - validators >=0.18.2
     - requests >=2.25.1
     - jsonschema >=4.0.0
-    - pre-commit >=2.20.0
     - conda-lock >=1.4.0
-    - album-solution-api >=0.7.0,<0.8.0
+    - album-solution-api >=0.7.3,<0.8.0
     - pooch >=1.8.1
 
 test:
